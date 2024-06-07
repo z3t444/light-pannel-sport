@@ -5,7 +5,8 @@ const int lampuMerah7Pin = 7;
 const int lampuHijau9Pin = 9;
 const int buzzerAudio11Pin = 11;
 
-void setup() {
+void setup()
+{
   pinMode(lampuMerah1Pin, OUTPUT);
   pinMode(lampuMerah3Pin, OUTPUT);
   pinMode(lampuMerah5Pin, OUTPUT);
@@ -14,7 +15,8 @@ void setup() {
   pinMode(buzzerAudio11Pin, OUTPUT);
 }
 
-void loop() {
+void loop()
+{
   digitalWrite(lampuMerah1Pin, HIGH);
   tone(buzzerAudio11Pin, 400);
   delay(400);
@@ -53,12 +55,13 @@ void loop() {
   noTone(buzzerAudio11Pin);
   digitalWrite(lampuHijau9Pin, HIGH);
 
-  digitalWrite(lampuMerah1Pin, LOW);
-  digitalWrite(lampuMerah3Pin, LOW);
-  digitalWrite(lampuMerah5Pin, LOW);
-  digitalWrite(lampuMerah7Pin, LOW);
+  digitalWrite(lampuHijau1Pin, LOW);
+  digitalWrite(lampuHijau3Pin, LOW);
+  digitalWrite(lampuHijau5Pin, LOW);
+  digitalWrite(lampuHijau7Pin, LOW);
   digitalWrite(lampuHijau9Pin, LOW);
 
-  while (true) {
+  while (true)
+  {
   }
 }
